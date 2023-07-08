@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&family=Poppins:wght@100;200;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Battery Boss</title>
+    <script>
+        function logout() {
+            sessionStorage.clear();
+            location.replace("login.html")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bindal_main_container">
+        <div class="dashboard_screen">
+            <div class="logo">
+                <img src="images/logo_s.png" class="img_res" alt="logo">
+            </div>
+            <div class="top_strip">Dashboard</div>
+            <div class="ds_user_box_circle">
+                <div class="dflex">
+                    <div class="circle_pic">
+                        <img src="images/pic.jpeg" class="img_res" alt="User Pic">
+                    </div>
+                    <p><span id="loginUser" style="text-transform:none">Admin</span><i class="fa fa-pencil"
+                            aria-hidden="true"></i></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="menu_icons_group" style="min-height: calc(100vh - 120px);">
+                <div class="menu_icons" >
+                    <div class="circle_icon" id="manageUser" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0.5C12.9283 0.5 13.8185 0.868749 14.4749 1.52513C15.1313 2.1815 15.5 3.07174 15.5 4C15.5 4.92826 15.1313 5.8185 14.4749 6.47487C13.8185 7.13125 12.9283 7.5 12 7.5C11.0717 7.5 10.1815 7.13125 9.52513 6.47487C8.86875 5.8185 8.5 4.92826 8.5 4C8.5 3.07174 8.86875 2.1815 9.52513 1.52513C10.1815 0.868749 11.0717 0.5 12 0.5ZM5 3C5.56 3 6.08 3.15 6.53 3.42C6.38 4.85 6.8 6.27 7.66 7.38C7.16 8.34 6.16 9 5 9C4.20435 9 3.44129 8.68393 2.87868 8.12132C2.31607 7.55871 2 6.79565 2 6C2 5.20435 2.31607 4.44129 2.87868 3.87868C3.44129 3.31607 4.20435 3 5 3ZM19 3C19.7956 3 20.5587 3.31607 21.1213 3.87868C21.6839 4.44129 22 5.20435 22 6C22 6.79565 21.6839 7.55871 21.1213 8.12132C20.5587 8.68393 19.7956 9 19 9C17.84 9 16.84 8.34 16.34 7.38C17.2119 6.25442 17.6166 4.8362 17.47 3.42C17.92 3.15 18.44 3 19 3ZM5.5 13.25C5.5 11.18 8.41 9.5 12 9.5C15.59 9.5 18.5 11.18 18.5 13.25V15H5.5V13.25ZM0 15V13.5C0 12.11 1.89 10.94 4.45 10.6C3.86 11.28 3.5 12.22 3.5 13.25V15H0ZM24 15H20.5V13.25C20.5 12.22 20.14 11.28 19.55 10.6C22.11 10.94 24 12.11 24 13.5V15Z" />
+                            </svg>
+                        </div>
+                        <p><a href="manage-user.html">Manage Users</a></p>
+                    </div>
+                    <div class="circle_icon" id="productMaster" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 22 17" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 0V3H0V17H22V3H19V0H13V3H9V0H3ZM2 5H20V15H2V5ZM14 7V9H12V11H14V13H16V11H18V9H16V7H14ZM4 9V11H10V9H4Z" />
+                            </svg>
+                        </div>
+                        <p><a href="product_master.html">Product Master</a></p>
+                    </div>
+                    <div class="circle_icon" id="partyMaster" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0.5C12.9283 0.5 13.8185 0.868749 14.4749 1.52513C15.1313 2.1815 15.5 3.07174 15.5 4C15.5 4.92826 15.1313 5.8185 14.4749 6.47487C13.8185 7.13125 12.9283 7.5 12 7.5C11.0717 7.5 10.1815 7.13125 9.52513 6.47487C8.86875 5.8185 8.5 4.92826 8.5 4C8.5 3.07174 8.86875 2.1815 9.52513 1.52513C10.1815 0.868749 11.0717 0.5 12 0.5ZM5 3C5.56 3 6.08 3.15 6.53 3.42C6.38 4.85 6.8 6.27 7.66 7.38C7.16 8.34 6.16 9 5 9C4.20435 9 3.44129 8.68393 2.87868 8.12132C2.31607 7.55871 2 6.79565 2 6C2 5.20435 2.31607 4.44129 2.87868 3.87868C3.44129 3.31607 4.20435 3 5 3ZM19 3C19.7956 3 20.5587 3.31607 21.1213 3.87868C21.6839 4.44129 22 5.20435 22 6C22 6.79565 21.6839 7.55871 21.1213 8.12132C20.5587 8.68393 19.7956 9 19 9C17.84 9 16.84 8.34 16.34 7.38C17.2119 6.25442 17.6166 4.8362 17.47 3.42C17.92 3.15 18.44 3 19 3ZM5.5 13.25C5.5 11.18 8.41 9.5 12 9.5C15.59 9.5 18.5 11.18 18.5 13.25V15H5.5V13.25ZM0 15V13.5C0 12.11 1.89 10.94 4.45 10.6C3.86 11.28 3.5 12.22 3.5 13.25V15H0ZM24 15H20.5V13.25C20.5 12.22 20.14 11.28 19.55 10.6C22.11 10.94 24 12.11 24 13.5V15Z" />
+                            </svg>
+                        </div>
+                        <p><a href="party_master.html">Party Master</a></p>
+                    </div>
+                    <div class="circle_icon" id="warrantyMaster" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 10C18 15.55 14.16 20.74 9 22C3.84 20.74 0 15.55 0 10V4L9 0L18 4V10ZM9 20C12.75 19 16 14.54 16 10.22V5.3L9 2.18L2 5.3V10.22C2 14.54 5.25 19 9 20ZM7 16L3 12L4.41 10.59L7 13.17L13.59 6.58L15 8" />
+                            </svg>
+                        </div>
+                        <p><a href="warranty_master.html">Warranty Master</a></p>
+                    </div>
+                    <div class="circle_icon" id="warrantyCheck" roles="distributor,dealer">
+                        <div class="circle">
+                            <svg viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 10C18 15.55 14.16 20.74 9 22C3.84 20.74 0 15.55 0 10V4L9 0L18 4V10ZM9 20C12.75 19 16 14.54 16 10.22V5.3L9 2.18L2 5.3V10.22C2 14.54 5.25 19 9 20ZM7 16L3 12L4.41 10.59L7 13.17L13.59 6.58L15 8" />
+                            </svg>
+                        </div>
+                        <p><a href="warranty-check.html">Warranty Check</a></p>
+                    </div>
+                    <div class="circle_icon" id="salesUpload" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.923 0.377996C6.61624 0.111347 7.38376 0.111347 8.077 0.377996L13.039 2.286C13.3219 2.39492 13.5651 2.587 13.7367 2.83692C13.9082 3.08684 14 3.38286 14 3.686V10.312C14 10.6151 13.9082 10.9112 13.7367 11.1611C13.5651 11.411 13.3219 11.6031 13.039 11.712L8.077 13.621C7.38376 13.8876 6.61624 13.8876 5.923 13.621L0.962 11.712C0.678928 11.6032 0.435469 11.4112 0.263731 11.1613C0.0919926 10.9114 4.01425e-05 10.6152 0 10.312V3.686C4.01425e-05 3.38275 0.0919926 3.08663 0.263731 2.8367C0.435469 2.58677 0.678928 2.39476 0.962 2.286L5.923 0.377996ZM7.718 1.311C7.25584 1.13323 6.74416 1.13323 6.282 1.311L4.898 1.844L10.488 3.96L12.436 3.126L7.718 1.31V1.311ZM13 3.971L7.5 6.33V12.758C7.574 12.739 7.646 12.716 7.718 12.688L12.68 10.78C12.7743 10.7436 12.8553 10.6795 12.9125 10.5961C12.9696 10.5128 13.0001 10.4141 13 10.313V3.973V3.971ZM6.5 12.757V6.33L1 3.972V10.312C0.999894 10.4131 1.03042 10.5118 1.08754 10.5951C1.14467 10.6785 1.22571 10.7426 1.32 10.779L6.282 12.687C6.354 12.715 6.426 12.738 6.5 12.757ZM1.564 3.126L7 5.456L9.164 4.528L3.497 2.382L1.564 3.126Z" />
+                            </svg>
+                        </div>
+                        <p><a href="sales_master.html">Sales Upload</a></p>
+                    </div>
+                    <div class="circle_icon" id="replace" roles="">
+                        <div class="circle">
+                            <svg viewBox="0 0 22 17" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 0V3H0V17H22V3H19V0H13V3H9V0H3ZM2 5H20V15H2V5ZM14 7V9H12V11H14V13H16V11H18V9H16V7H14ZM4 9V11H10V9H4Z" />
+                            </svg>
+                        </div>
+                        <p>Replace</p>
+                    </div>
+                    <div class="circle_icon" id="report" roles="">
+                        <div class="circle">
+                            <svg class="stokeicons" viewBox="0 0 208 240" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 40V199.924" stroke="black" stroke-width="15.992" stroke-linecap="round" />
+                                <path d="M200 88V200" stroke="black" stroke-width="15.992" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M40 8H120" stroke="black" stroke-width="15.992" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M40 232H168" stroke="black" stroke-width="15.992" stroke-linecap="round" />
+                                <path d="M200 200C200.087 215.982 184 232 168 232" stroke="black" stroke-width="15.992"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 200C8 216 24 232 40 232" stroke="black" stroke-width="15.992"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 39.9768C8 24 24 8.35631 40 7.99999" stroke="black" stroke-width="15.992"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M199.913 88.0718L120 8" stroke="black" stroke-width="15.992"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M120 56C120.049 71.9129 136.065 88 152 88" stroke="black" stroke-width="15.992"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M120 56V8" stroke="black" stroke-width="15.992" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M152 88H200" stroke="black" stroke-width="15.992" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M40 200H88" stroke="black" stroke-width="16" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M40 168H120" stroke="black" stroke-width="16" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M40 136H88" stroke="black" stroke-width="16" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p>Report</p>
+                    </div>
+                    <div class="circle_icon">
+                        <div class="circle">
+                            <svg viewBox="0 0 20 18" fill="none" class="stokeicons" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 13L19 9M19 9L15 5M19 9H5M11 13V14C11 14.7956 10.6839 15.5587 10.1213 16.1213C9.55871 16.6839 8.79565 17 8 17H4C3.20435 17 2.44129 16.6839 1.87868 16.1213C1.31607 15.5587 1 14.7956 1 14V4C1 3.20435 1.31607 2.44129 1.87868 1.87868C2.44129 1.31607 3.20435 1 4 1H8C8.79565 1 9.55871 1.31607 10.1213 1.87868C10.6839 2.44129 11 3.20435 11 4V5"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p><a onclick="logout()" href="#">Logout</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="copywrite">C All Rights Reserved with Bindal Powertech Pvt.Ltd.</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        if (sessionStorage.getItem("partyname") == null) {
+            location.replace("login.html");
+        } else {
+            const span = document.getElementById("loginUser");
+            const role = sessionStorage.getItem("role");
+            span.textContent = `${sessionStorage.getItem("partyname")}(${role})`;
+            if (role.toLocaleLowerCase() !== 'admin') {
+                const menues = document.querySelectorAll('[roles]');
+                menues.forEach(item => {
+                    const roles = item.getAttribute('roles');
+                    const arr = roles.split(',');
+                    if (!arr.includes(role.toLocaleLowerCase())) {
+                        const _id = item.getAttribute('id');
+                        let ele= document.getElementById(_id);
+                        ele.remove();
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

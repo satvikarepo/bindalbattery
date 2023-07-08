@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BSt7rT+rId15XIszp+kQOHr0oeq2u6vFvoXcTk6GF1M=",
+  "Source": "BindalBatteryAPI",
+  "BasePath": "_content/BindalBatteryAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
